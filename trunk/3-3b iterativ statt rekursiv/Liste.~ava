@@ -1,0 +1,19 @@
+public class Liste {
+    //Attribute
+    Knoten anfang;
+    
+    //Konstruktor
+    Liste() {}
+    
+    //Methoden
+    
+     //Länge geben
+     
+     //suchen
+     
+     //vorne einfügen
+     
+     //hinten einfügen
+    
+
+}
