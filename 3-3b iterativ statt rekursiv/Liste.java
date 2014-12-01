@@ -6,7 +6,6 @@ public class Liste {
     //Konstruktor
     Liste() {}
 
-
     //Methoden
 
     //vorne einfuegen
