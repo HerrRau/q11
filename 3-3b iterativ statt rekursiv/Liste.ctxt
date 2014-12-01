@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Liste()
+comment1.params=dneu
+comment1.target=void\ vorneEinfuegen(Datenelement)
+comment2.params=
+comment2.target=int\ laengeGeben()
+comment3.params=
+comment3.target=int\ laengeGebenIterativ()
+comment4.params=
+comment4.target=void\ informationAusgeben()
+numComments=5
