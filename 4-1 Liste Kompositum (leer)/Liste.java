@@ -5,6 +5,8 @@ public class Liste {
     //Konstruktor
     Liste() {}
     
+
+    
     //Methoden
     
 //     //Laenge der Liste
