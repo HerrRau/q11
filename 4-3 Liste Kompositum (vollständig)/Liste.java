@@ -15,8 +15,7 @@ public class Liste {
             umdrehen();
             vorneEinfuegen(d);
         }
-    }
-    
+    }    
     
     public int laengeGeben() {
         return anfang.restlaengeGeben();
