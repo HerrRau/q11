@@ -60,7 +60,7 @@ public class Tester extends junit.framework.TestCase
         liste1.vorneEinfuegen(patient2);
         liste1.vorneEinfuegen(patient1);
         liste1.informationAusgeben();
-        Patient p = (Patient) liste1.anfang.daten;
+        Patient p = (Patient) liste1.anfangEntfernen();
         assertEquals("Patient 1", p.name);
     }
 
@@ -122,9 +122,9 @@ public class Tester extends junit.framework.TestCase
         liste1.einfuegenVor(patient2,patient3);
         liste1.einfuegenVor(patient1,patient2);
         liste1.informationAusgeben();
-        Patient p1 = (Patient) liste1.anfang.daten;
-        Patient p2 = (Patient) liste1.anfang.nachfolger.daten;
-        Patient p3 = (Patient) liste1.anfang.nachfolger.nachfolger.daten;
+        Patient p1 = (Patient) liste1.anfangEntfernen();
+        Patient p2 = (Patient) liste1.anfangEntfernen();
+        Patient p3 = (Patient) liste1.anfangEntfernen();
         assertEquals("Patient 1", p1.name);
         assertEquals("Patient 2", p2.name);
         assertEquals("Patient 3", p3.name);
@@ -157,13 +157,13 @@ public class Tester extends junit.framework.TestCase
     public void testKnotenEntfernenVoll() {
         System.out.println("---------------");
         System.out.println("Test Knoten entfernen (voll)");
-        liste1.einfuegenVor(patient3,patient1);
-        liste1.einfuegenVor(patient2,patient3);
-        liste1.einfuegenVor(patient1,patient2);
+        liste1.vorneEinfuegen(patient3);
+        liste1.vorneEinfuegen(patient2);
+        liste1.vorneEinfuegen(patient1);
         liste1.knotenEntfernen(patient2);
         liste1.informationAusgeben();
-        Patient p1 = (Patient) liste1.anfang.daten;
-        Patient p3 = (Patient) liste1.anfang.nachfolger.daten;
+        Patient p1 = (Patient) liste1.anfangEntfernen();
+        Patient p3 = (Patient) liste1.anfangEntfernen();
         assertEquals("Patient 1", p1.name);
         assertEquals("Patient 3", p3.name);
    }
@@ -175,9 +175,9 @@ public class Tester extends junit.framework.TestCase
         liste1.sortiertEinfuegen(patient3);
         liste1.sortiertEinfuegen(patient2);
         liste1.informationAusgeben();
-        Patient p1 = (Patient) liste1.anfang.daten;
-        Patient p2 = (Patient) liste1.anfang.nachfolger.daten;
-        Patient p3 = (Patient) liste1.anfang.nachfolger.nachfolger.daten;
+        Patient p1 = (Patient) liste1.anfangEntfernen();
+        Patient p2 = (Patient) liste1.anfangEntfernen();
+        Patient p3 = (Patient) liste1.anfangEntfernen();
         assertEquals("Patient 1", p1.name);
         assertEquals("Patient 2", p2.name);
         assertEquals("Patient 3", p3.name);
@@ -190,45 +190,46 @@ public class Tester extends junit.framework.TestCase
         liste1.informationAusgeben();
         assertEquals(1, liste1.laengeGeben());
     }
-//
-//     public void testHintenEinfuegenLeereListe()
-//     {
-//         System.out.println("---------------");
-//         System.out.println("Test Einfuegen am Ende (leere Liste)");
-//         liste1.hintenEinfuegen(patient1);
-//         liste1.informationAusgeben();
-//         assertEquals(1, liste1.laengeGeben());
-//     }
-// 
-//     public void testHintenEinfuegenVolleListe()
-//     {
-//         System.out.println("---------------");
-//         System.out.println("Test Einfuegen am Ende (volle Liste)");
-//         liste1.hintenEinfuegen(patient1);
-//         liste1.hintenEinfuegen(patient2);
-//         liste1.informationAusgeben();
-//         assertEquals(2, liste1.laengeGeben());
-//         Patient p = (Patient) liste1.anfang.nachfolgerGeben().daten;
-//         assertEquals("Patient 2",p.name);
-//     }
-// 
-//     public void testEndeEntfernenLeer() {
-//         System.out.println("---------------");
-//         System.out.println("Test Ende entfernen (leer)");
-//         assertEquals(null, liste1.endeEntfernen());
-//     }
-//     
-//     public void testEndeEntfernenVoll() {
-//         System.out.println("---------------");
-//         System.out.println("Test Ende entfernen (voll)");
-//         liste1.einfuegenVor(patient3,patient1);
-//         liste1.einfuegenVor(patient2,patient3);
-//         liste1.einfuegenVor(patient1,patient2);
-//         Datenelement d = liste1.endeEntfernen();
-//         assertEquals("Patient 3", ((Patient) d).name);
-//         liste1.informationAusgeben();     
-//     }
-//         
+
+    public void testHintenEinfuegenLeereListe()
+    {
+        System.out.println("---------------");
+        System.out.println("Test Einfuegen am Ende (leere Liste)");
+        liste1.hintenEinfuegen(patient1);
+        liste1.informationAusgeben();
+        assertEquals(1, liste1.laengeGeben());
+    }
+
+    public void testHintenEinfuegenVolleListe()
+    {
+        System.out.println("---------------");
+        System.out.println("Test Einfuegen am Ende (volle Liste)");
+        liste1.hintenEinfuegen(patient1);
+        liste1.hintenEinfuegen(patient2);
+        liste1.informationAusgeben();
+        assertEquals(2, liste1.laengeGeben());
+        Patient p1 = (Patient) liste1.anfangEntfernen();
+        Patient p2 = (Patient) liste1.anfangEntfernen();
+        assertEquals("Patient 2",p2.name);
+    }
+
+    public void testEndeEntfernenLeer() {
+        System.out.println("---------------");
+        System.out.println("Test Ende entfernen (leer)");
+        assertEquals(null, liste1.endeEntfernen());
+    }
+    
+    public void testEndeEntfernenVoll() {
+        System.out.println("---------------");
+        System.out.println("Test Ende entfernen (voll)");
+        liste1.einfuegenVor(patient3,patient1);
+        liste1.einfuegenVor(patient2,patient3);
+        liste1.einfuegenVor(patient1,patient2);
+        Datenelement d = liste1.endeEntfernen();
+        assertEquals("Patient 3", ((Patient) d).name);
+        liste1.informationAusgeben();     
+    }
+        
     
 }   
 
