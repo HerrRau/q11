@@ -1,9 +1,9 @@
 import java.util.*;
 
 
-public class Demo
+public class DemoQueue
 {
-    public Demo()
+    public DemoQueue()
     {
         // das mit den spitzen Klammern heisst "generics" und gibt an, dass in die Beispielqueue
         // in diesem Fall nur String-Objekte hinein duerfen
