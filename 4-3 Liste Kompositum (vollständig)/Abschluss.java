@@ -2,15 +2,13 @@ public class Abschluss extends Listenelement {
 
     //NEU:
     public Knoten hintenEinfuegen (Datenelement d) {
-        Knoten kneu;
-        kneu = new Knoten(d, this);
+        Knoten kneu = new Knoten(d, this);
         return kneu;
     }
     
 
     public Knoten einfuegenVor(Datenelement dneu, Datenelement dvor) {
-        Knoten kneu;
-        kneu = new Knoten(dneu, this);
+        Knoten kneu = new Knoten(dneu, this);
         return kneu;
     }    
     
