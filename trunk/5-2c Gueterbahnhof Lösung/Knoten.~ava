@@ -1,0 +1,114 @@
+public class Knoten {
+    //Attribute
+    Datenelement daten;
+    Knoten nachfolger;
+    
+    //Konstruktor
+    //neu: enthaelt als Argument einen Verweis auf den zu setzenden Nachfolger
+    Knoten (Datenelement d, Knoten k) {
+        daten = d;
+        nachfolger = k;
+    }
+    
+    //Methoden
+
+    public int restlaengeGeben() {
+        if (nachfolger == null) {
+            return 1;
+        }
+        else {
+            return nachfolger.restlaengeGeben()+1;
+        }
+    }
+
+    public Datenelement suchen(String s) {
+        if (daten.schluesselIstGleich(s)) {
+            return daten;
+        } 
+        else {
+            if (nachfolger != null) {
+                return nachfolger.suchen(s);
+            }
+            else {
+                return null;
+            }
+        }        
+    }
+    
+    public void hintenEinfuegen(Datenelement dneu) {
+        if (nachfolger != null) nachfolger.hintenEinfuegen(dneu);
+        else {
+            Knoten kneu = new Knoten (dneu, null);
+            nachfolger = kneu;
+        }
+    }
+    
+    public Knoten einfuegenVor(Datenelement dneu, Datenelement dvor) {
+        if(daten == dvor) {
+            Knoten kneu;
+            kneu = new Knoten(dneu, this);
+            return kneu;
+        }
+        else  {
+            nachfolger = nachfolger.einfuegenVor(dneu, dvor);
+//             Knoten rueckmeldung;
+//             rueckmeldung = nachfolger.einfuegenVor(dneu, dvor);
+//             nachfolger = rueckmeldung;
+             return this;
+        }    
+    }
+    
+    public Knoten sortiertEinfuegen(Datenelement d) {
+        if (daten.istKleinerAls(d)) {
+            if (nachfolger!=null) nachfolger = nachfolger.sortiertEinfuegen(d);
+            else hintenEinfuegen(d);
+            return this;
+        }
+        else {
+            Knoten k = new Knoten (d,this);
+            return k;
+        }
+    }
+    
+    public Datenelement datenelementGeben() {
+        return daten;
+    }
+    
+    public Knoten nachfolgerGeben() {
+        return nachfolger;
+    }
+    
+    public Datenelement endeGeben() {
+        if (nachfolger==null) return daten;
+        else return nachfolger.endeGeben();
+    }
+    
+    public Knoten endeEntfernen() {
+        if (nachfolger != null) {
+            nachfolger = nachfolger.endeEntfernen();
+            return this;
+        }
+        else {
+            return null;
+        }            
+    }
+    
+    public Knoten knotenEntfernen(Datenelement d) {
+        if (daten==d) return nachfolger;
+        else {
+//             if (nachfolger!=null) {
+//                 nachfolger = nachfolger.knotenEntfernen(d);
+//                 return this;
+//             }
+//             else return this;                
+//         }
+            if (nachfolger!=null) nachfolger = nachfolger.knotenEntfernen(d);
+            return this;                
+        }
+    }
+    
+    public void informationAusgeben() {
+        daten.informationAusgeben();
+        if (nachfolger!=null) nachfolger.informationAusgeben();
+    }
+}
