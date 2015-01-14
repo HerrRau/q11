@@ -24,6 +24,7 @@ public class Woerterbucheintrag implements Datenelement {
         else return false;
     } 
 
+    //Methoden fuers Einfuegen
     public boolean istKleinerAls(Datenelement d) {
         Woerterbucheintrag w = (Woerterbucheintrag) d; //Typumwandlung
         if (this.wort.compareTo(w.wort)<0) return true;
