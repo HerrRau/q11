@@ -1,14 +1,22 @@
 class Bahnhof 
 {
-    Stack gleis1 = new Liste();
-    Stack gleis2 = new Liste();
-    Stack gleis3 = new Liste();
+    Stack gleis1;
+    Stack gleis2;
+    Stack gleis3;
+    
+    
+  public Bahnhof() {
+    gleis1 = new Liste();
+    gleis2 = new Liste();
+    gleis3 = new Liste();
+  }
     
     public Waggon neuerWaggon(String ziel, int wagennummer) {
         Waggon w = new Waggon(ziel, wagennummer);
         return w;        
     }
-    
+
+
     public void neuerWaggonAufGleis(String ziel, int wagennummer, int gleis) {
         Waggon w = new Waggon(ziel, wagennummer);
         waggonHinzufuegen(w, gleis);
