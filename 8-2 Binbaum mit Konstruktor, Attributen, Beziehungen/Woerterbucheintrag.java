@@ -14,6 +14,7 @@ public class Woerterbucheintrag implements Datenelement {
         System.out.println (wort + ": " + bedeutung);
     } 
     
+    //Methoden fuers Suchen
     public boolean schluesselIstGleich(String s) {
         if (wort.compareTo(s)==0) return true;
         else return false;
