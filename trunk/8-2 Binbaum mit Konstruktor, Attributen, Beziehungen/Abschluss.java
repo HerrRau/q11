@@ -3,6 +3,7 @@ public class Abschluss extends Baumelement {
     
     // Konstruktoren
     public Abschluss() {
+        super(); // hier ueberfluessig
     }
 
     // Methoden
