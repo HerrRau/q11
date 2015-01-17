@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=nameNeu\ weiblichNeu\ alterNeu\ staerkeNeu\ geschicklichkeitNeu\ intelligenzNeu
+comment0.target=Held(java.lang.String,\ boolean,\ int,\ int,\ int,\ int)
+comment1.params=
+comment1.target=Waffe\ waffeGeben()
+comment2.params=waffeNeu
+comment2.target=void\ waffeSetzen(Waffe)
+numComments=3
