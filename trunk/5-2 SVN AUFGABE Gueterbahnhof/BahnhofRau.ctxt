@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=BahnhofRau()
+comment1.params=ziel\ wagennummer
+comment1.target=Waggon\ neuerWaggon(java.lang.String,\ int)
+comment2.params=ziel\ wagennummer\ gleis
+comment2.target=void\ neuerWaggonAufGleis(java.lang.String,\ int,\ int)
+comment3.params=w\ i
+comment3.target=void\ waggonHinzufuegen(Waggon,\ int)
+comment4.params=i
+comment4.target=Waggon\ waggonEntfernen(int)
+comment5.params=
+comment5.target=void\ informationAusgeben()
+numComments=6
