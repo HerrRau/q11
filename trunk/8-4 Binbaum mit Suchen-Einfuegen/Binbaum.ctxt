@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Binbaum()
+comment1.params=d
+comment1.target=void\ einfuegen(Datenelement)
+comment2.params=s
+comment2.target=Datenelement\ suchen(java.lang.String)
+numComments=3
