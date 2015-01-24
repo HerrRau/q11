@@ -6,4 +6,6 @@ public class Kaenguru implements Tier
     
     void test1() {};
 
+    void test2() {};
+
 }
