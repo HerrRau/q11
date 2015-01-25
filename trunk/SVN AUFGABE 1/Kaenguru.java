@@ -1,9 +1,8 @@
 public class Kaenguru implements Tier
 {
     public String lautGeben() {
-        return "Hoppeldihopp!";
+        return "Hoppeldihopp";
     }
     
     
-    public void fehler() {}
 }
