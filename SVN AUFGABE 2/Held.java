@@ -23,6 +23,7 @@ public class Held
     Waffe waffeGeben() {
         return waffe;
     }
+    
     void waffeSetzen(Waffe waffeNeu) {
         waffe = waffeNeu;
     }
@@ -30,6 +31,7 @@ public class Held
     int alterGeben() {
         return alter;
     }
+    
     void alterSetzen(int alterNeu) {
         alter = alterNeu;
     }
@@ -37,6 +39,7 @@ public class Held
     Ross pferdGeben(){
         return pferd;
     }
+    
     void pferdSetzen(Ross pferdNeu) {
         pferd = pferdNeu;
     }
