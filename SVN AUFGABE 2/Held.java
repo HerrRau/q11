@@ -43,6 +43,10 @@ public class Held
     void pferdSetzen(Ross pferdNeu) {
         pferd = pferdNeu;
     }
+    
+    void intelligenzSetzen (int Intelligenzgrad){
+        intelligenz = Intelligenzgrad;
+    }
 
 
 }
