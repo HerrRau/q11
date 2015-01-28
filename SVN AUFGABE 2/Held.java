@@ -37,6 +37,9 @@ public class Held
     Ross pferdGeben(){
         return pferd;
     }
+    void pferdSetzen(Ross pferdNeu) {
+        pferd = pferdNeu;
+    }
 
 
 }
