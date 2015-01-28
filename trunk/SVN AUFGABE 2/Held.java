@@ -50,26 +50,19 @@ public class Held
     return staerke;
     }
     
-
     //Stephan.eli.paul sind horny
 
     void staerkeSetzen(int staerkeNeu){
 
         staerke = staerkeNeu;
     }
-
-
-
     //Stephan.eli.paul sind horny
-
     //Stephan.eli.paul sind horny - das wissen wir doch alle :*
-
- 
     void intelligenzSetzen (int Intelligenzgrad){
         intelligenz = Intelligenzgrad;
     }
 }
-}
+
 
 
 
