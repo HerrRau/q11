@@ -26,6 +26,9 @@ public class Held
     void waffeSetzen(Waffe waffeNeu) {
         waffe = waffeNeu;
     }
+    Ross pferdGeben(){
+        return pferd;
+    }
 
 
 }
