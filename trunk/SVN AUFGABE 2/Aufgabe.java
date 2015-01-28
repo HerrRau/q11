@@ -11,3 +11,5 @@ public class Aufgabe
     // In den anderen Klassen machen Sie nichts!
 
 }
+
+

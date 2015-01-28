@@ -35,7 +35,6 @@ public class Held
         System.out.println("Du hast jetzt "+ add_staerke +" mehr!");
     }
 
-
     int alterGeben(){
         return alter;
     }
