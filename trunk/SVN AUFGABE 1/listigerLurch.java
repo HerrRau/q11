@@ -1,5 +1,5 @@
 
-public class Lurch implements Tier {
+public class listigerLurch implements Tier {
 
     public String lautGeben(){
         return "Lulululululu";  
