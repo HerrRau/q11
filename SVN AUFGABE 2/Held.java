@@ -1,3 +1,4 @@
+
 public class Held
 {
     String name;
@@ -43,10 +44,23 @@ public class Held
     void pferdSetzen(Ross pferdNeu) {
         pferd = pferdNeu;
     }
+
+    //Stephan.eli.paul sind horny
+    void staerkeSetzen( int staerkeNeu){
+        staerke = staerkeNeu;
+        
+    }
+    int staerkeGeben(){
+        return staerke;
+    }
+   
+
     
     void intelligenzSetzen (int Intelligenzgrad){
         intelligenz = Intelligenzgrad;
     }
 
 
+
 }
+
