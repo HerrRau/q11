@@ -1,5 +1,4 @@
 
-
 public class Held
 {
     String name;
@@ -10,7 +9,7 @@ public class Held
     int intelligenz;
     Ross pferd;
     Waffe waffe;    
-    
+
     public Held(String nameNeu, boolean weiblichNeu, int alterNeu, int staerkeNeu, int geschicklichkeitNeu, int intelligenzNeu)  {
         name = nameNeu;
         weiblich = weiblichNeu;
@@ -21,7 +20,7 @@ public class Held
         pferd = new Ross();
         waffe = new Waffe();
     }
-    
+
     Waffe waffeGeben() {
         return waffe;
     }
@@ -29,11 +28,18 @@ public class Held
     void waffeSetzen(Waffe waffeNeu) {
         waffe = waffeNeu;
     }
-    
+
+    void stärke(int add_staerke)
+    {
+        staerke=add_staerke;
+        System.out.println("Du hast jetzt "+ add_staerke +" mehr!");
+    }
+
+
     int alterGeben(){
         return alter;
     }
-    
+
     void alterSetzen(int alterNeu) {
         alter = alterNeu;
     }
@@ -41,34 +47,24 @@ public class Held
     Ross pferdGeben(){
         return pferd;
     }
-    
+
     void pferdSetzen(Ross pferdNeu) {
         pferd = pferdNeu;
     }
-    
+
     int staerkeGeben(){
-    return staerke;
-    }
-    
-
-  
-
-
-    void staerkeSetzen(int staerkeNeu){
-
-        staerke = staerkeNeu;
+        return staerke;
     }
 
-
-
-   
     void intelligenzSetzen (int Intelligenzgrad){
 
         intelligenz = Intelligenzgrad;
+        if(intelligenz>9000)
+        {
+            System.out.println("OVER 9000");
+        }
     }
 }
-
-
 
 
 
