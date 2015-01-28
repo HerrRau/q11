@@ -29,7 +29,7 @@ public class Held
         waffe = waffeNeu;
     }
 
-    void stärke(int add_staerke)
+    void staerkeSetzen2(int add_staerke)
     {
         staerke=add_staerke;
         System.out.println("Du hast jetzt "+ add_staerke +" mehr!");
@@ -59,8 +59,8 @@ public class Held
         staerke = staerkeNeu;
     }
     
-     void intelligenzSetzen (int Intelligenzgrad){
-         intelligenz = Intelligenzgrad;
+     void intelligenzSetzen (int intelligenzgrad){
+         intelligenz = intelligenzgrad;
     
     }
 }
