@@ -55,16 +55,13 @@ public class Held
     int staerkeGeben(){
         return staerke;
     }
-
-    void intelligenzSetzen (int Intelligenzgrad){
-
-        intelligenz = Intelligenzgrad;
-        if(intelligenz>9000)
-        {
-            System.out.println("OVER 9000");
-        }
+    
+     void staerkeSetzen(int staerkeNeu){
+        staerke = staerkeNeu;
+    }
+    
+     void intelligenzSetzen (int Intelligenzgrad){
+         intelligenz = Intelligenzgrad;
+    
     }
 }
-
-
-
