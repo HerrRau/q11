@@ -26,12 +26,11 @@ public class Held
         return waffe;
     }
 
-    
     void waffeSetzen(Waffe waffeNeu) {
         waffe = waffeNeu;
     }
     
-    int alterGeben() {
+    int alterGeben(){
         return alter;
     }
     
@@ -51,14 +50,20 @@ public class Held
     return staerke;
     }
     
+
   
+
 
     void staerkeSetzen(int staerkeNeu){
 
         staerke = staerkeNeu;
     }
+
+
+
    
     void intelligenzSetzen (int Intelligenzgrad){
+
         intelligenz = Intelligenzgrad;
     }
 }
