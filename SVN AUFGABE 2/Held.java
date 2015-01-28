@@ -26,6 +26,14 @@ public class Held
     void waffeSetzen(Waffe waffeNeu) {
         waffe = waffeNeu;
     }
+    
+    int alterGeben() {
+        return alter;
+    }
+    void alterSetzen(int alterNeu) {
+        alter = alterNeu;
+    }
+
     Ross pferdGeben(){
         return pferd;
     }
