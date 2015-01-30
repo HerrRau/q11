@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Baumelement()
+comment1.params=d
+comment1.target=Baumelement\ einfuegen(Datenelement)
+comment2.params=s
+comment2.target=Datenelement\ suchen(java.lang.String)
+comment3.params=
+comment3.target=void\ inorderAusgeben()
+comment4.params=
+comment4.target=void\ preorderAusgeben()
+comment5.params=
+comment5.target=void\ postorderAusgeben()
+comment6.params=s\ i
+comment6.target=int\ tiefeGeben(java.lang.String,\ int)
+comment7.params=tiefenzahl
+comment7.target=void\ strukturAusgeben(int)
+numComments=8
