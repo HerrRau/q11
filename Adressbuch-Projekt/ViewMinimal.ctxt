@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ViewMinimal()
+comment1.params=c
+comment1.target=void\ controllerSetzen(Controller)
+comment2.params=i
+comment2.target=void\ anzahlEintraegeEmpfangen(int)
+comment3.params=s
+comment3.target=void\ kommentarAnzeigen(java.lang.String)
+comment4.params=i
+comment4.target=void\ anzahlEintraegeAnzeigen(int)
+comment5.params=a
+comment5.target=void\ adresseAnzeigen(Adresse)
+comment6.params=a
+comment6.target=void\ adresseEintragenSenden(Adresse)
+comment7.params=suchschluessel
+comment7.target=void\ adresseSuchenSenden(java.lang.String)
+comment8.params=suchschluessel\ telefon
+comment8.target=void\ telefonAendernSenden(java.lang.String,\ java.lang.String)
+comment9.params=suchschluessel\ email
+comment9.target=void\ emailAendernSenden(java.lang.String,\ java.lang.String)
+numComments=10
