@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Schuelerverwaltung()
+comment1.params=nachname\ vorname
+comment1.target=void\ schuelerHinzufuegen(java.lang.String,\ java.lang.String)
+comment2.params=nachname\ vorname
+comment2.target=void\ schuelerEntfernen(java.lang.String,\ java.lang.String)
+numComments=3
