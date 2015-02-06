@@ -12,7 +12,7 @@ public class Main{
     //Methoden
     void start(){
         this.controller = new MyController();
-        this.view = adressbuchGUI();
+        this.view = new Adressbuch_GUI();
         this.model = new UnterKlasseModel();
     }
 
