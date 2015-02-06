@@ -13,14 +13,12 @@ public class ViewMinimal implements View
     }
 
     // Ansprache (durch das Model)
-    
+
     public void anzahlEintraegeEmpfangen(int i) {
         this.anzahlEintraegeAnzeigen(i);        
     }
 
-
     // Methoden zur Anzeige
-
     public void kommentarAnzeigen(String s) {
         System.out.println("Kommentar: "+s);
         System.out.println("==============");
@@ -32,14 +30,13 @@ public class ViewMinimal implements View
     }
 
     public void adresseAnzeigen(Adresse a) {
-//         System.out.println("Nachname: "+a.nachnameGeben());
-//         System.out.println("Vorname: "+a.vornameGeben());
-//         System.out.println("E-Mail: "+a.emailGeben());
-//         System.out.println("Telefon: "+a.telefonGeben());
-//         System.out.println("==============");
+        //         System.out.println("Nachname: "+a.nachnameGeben());
+        //         System.out.println("Vorname: "+a.vornameGeben());
+        //         System.out.println("E-Mail: "+a.emailGeben());
+        //         System.out.println("Telefon: "+a.telefonGeben());
+        //         System.out.println("==============");
     }
 
-    
     
     // ab hier Methoden zur Kommunikation mit Controller
 
@@ -58,6 +55,5 @@ public class ViewMinimal implements View
     public void emailAendernSenden(String suchschluessel, String email) {
         if (controller !=null) controller.emailAendern(suchschluessel, email);
     }
-
 
 }
