@@ -24,8 +24,8 @@ public class MyController extends ControllerUmsetzung
         if (model !=null) {
            if (model.adresseSuchen(a.schluesselAlsStringGeben()) == null)
             { model.adresseEintragen(a);
-                view.kommentarAnzeigen("Die Adresse wurde erfolgreich eingetragen"); }
-            else { view.kommentarAnzeigen("Diese Adresse gibt es bereits"); }}
+                view.kommentarAnzeigen("Die Adresse wurde erfolgreich eingetragen."); }
+            else { view.kommentarAnzeigen("Diese Adresse gibt es bereits."); }}
             else { view.kommentarAnzeigen("Fehler: Noch kein Model vorhanden."); } 
         }
     }
