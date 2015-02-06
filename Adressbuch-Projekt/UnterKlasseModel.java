@@ -9,7 +9,7 @@ public class UnterKlasseModel extends ModelUmsetzung
     }
 
     public void adresseEintragen(Adresse a) {
-        binbaum.einfuegen((Datenelement) a);
+        binbaum.einfuegen(a);
     }
 
     public Adresse adresseSuchen(String suchschluessel) {

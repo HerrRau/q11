@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=MyController()
+comment1.params=schluessel\ mail
+comment1.target=void\ emailAendern(java.lang.String,\ java.lang.String)
+comment2.params=schluessel\ fon
+comment2.target=void\ telefonAendern(java.lang.String,\ java.lang.String)
+comment3.params=schluessel
+comment3.target=void\ adresseSuchen(java.lang.String)
+comment4.params=a
+comment4.target=void\ adresseEintragen(Adresse)
+numComments=5

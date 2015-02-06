@@ -1,2 +1,18 @@
 #BlueJ class context
-numComments=0
+comment0.params=n\ v\ e\ t
+comment0.target=Adresse(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment1.params=tneu
+comment1.target=void\ telefonAendern(java.lang.String)
+comment2.params=eneu
+comment2.target=void\ emailAendern(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ emailGeben()
+comment4.params=
+comment4.target=java.lang.String\ telefonGeben()
+comment5.params=
+comment5.target=java.lang.String\ vornameGeben()
+comment6.params=
+comment6.target=java.lang.String\ nachnameGeben()
+comment7.params=
+comment7.target=java.lang.String\ schluesselAlsStringGeben()
+numComments=8
