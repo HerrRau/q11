@@ -18,7 +18,7 @@ public class Adressbuch_GUI extends JFrame implements View {
   private JButton aktualisierenB = new JButton();
   private JLabel rueckL = new JLabel();
   private JLabel anzahlL = new JLabel();
-  private Controller c;
+  private MyController c;
   // Ende Attribute
   
   public Adressbuch_GUI(String title) { 
@@ -104,27 +104,36 @@ public class Adressbuch_GUI extends JFrame implements View {
     new Adressbuch_GUI("Adressbuch_GUI");
   }
   
-  public void controllerSetzen(Controller cNeu){
+  public void controllerSetzen(MyController cNeu){
       this.c = cNeu;
   }
   
-  public void adresseAnzeigen(Adresse a);
-  public void anzahlEintraegeAnzeigen(int i);
-  public void kommentarAnzeigen(String s);
+  public void adresseAnzeigen(Adresse a){}
+  public void anzahlEintraegeAnzeigen(int i){}
+  public void kommentarAnzeigen(String s){}
    // end of main
   
   public void suchenB_ActionPerformed(ActionEvent evt) {
        c.adresseSuchen(NnameT.getText());
   }  //end of suchenB_ActionPerformed
 
-
   public void eintragenB_ActionPerformed(ActionEvent evt) {
        c.adresseEintragen(NnameT.getText(), VnameT.getText(), emailT.getText(), telefonT.getText());
   }  //end of eintragenB_ActionPerformed
 
-  public void aktualisierenB_ActionPerformed(ActionEvent evt) {
-       
-  }  //end of aktualisierenB_ActionPerformed
+  public void aktualisierenB_ActionPerformed(ActionEvent evt) { 
+      if(emailT.getText() != null)
+       {
+           c.emailAendern(NnameT.getText(), emailT.getText());
+       } else {
+           if(telefonT.getText() != null)
+           {
+               c.telefonAendern(NnameT.getText(), telefonT.getText());
+           } else {
+               view.kommentarAnzeigen("Bitte ausfüllen");
+            }
+        }
+    }  //end of aktualisierenB_ActionPerformed
 
 //    Ende Methoden
 // }  end of class Adressbuch_GUI
