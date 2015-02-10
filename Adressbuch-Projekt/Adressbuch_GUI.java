@@ -3,15 +3,7 @@ import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.event.*;
 
-/**
-  *
-  * Beschreibung
-  *
-  * @version 1.0 vom 06.02.2015
-  * @author 
-  */
-
-public class Adressbuch_GUI extends Frame {
+public class Adressbuch_GUI extends JFrame {
   // Anfang Attribute
   private JTextField VnameT = new JTextField();
   private JLabel VnameL = new JLabel();
@@ -67,7 +59,7 @@ public class Adressbuch_GUI extends Frame {
     telefonT.setBounds(184, 144, 150, 20);
     cp.add(telefonT);
     suchenB.setBounds(352, 64, 99, 25);
-    suchenB.setText("suchenB");
+    suchenB.setText("suchen");
     suchenB.setMargin(new Insets(2, 2, 2, 2));
     suchenB.addActionListener(new ActionListener() { 
       public void actionPerformed(ActionEvent evt) { 
