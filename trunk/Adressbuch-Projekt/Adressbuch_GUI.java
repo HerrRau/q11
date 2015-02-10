@@ -62,7 +62,8 @@ public class Adressbuch_GUI extends JFrame implements View {
     suchenB.setBounds(352, 64, 99, 25);
     suchenB.setText("suchen");
     suchenB.setMargin(new Insets(2, 2, 2, 2));
-    suchenB.addActionListener(new ActionListener() { 
+    suchenB.addActionListener(new ActionListener() 
+    { 
       public void actionPerformed(ActionEvent evt) { 
         suchenB_ActionPerformed(evt);
       }
@@ -106,11 +107,17 @@ public class Adressbuch_GUI extends JFrame implements View {
   public void controllerSetzen(Controller cNeu){
       this.c = cNeu;
   }
-  } // end of main
   
-//    public void suchenB_ActionPerformed(ActionEvent evt) {
-//      TODO hier Quelltext einfügen
-//   }  end of suchenB_ActionPerformed
+  public void adresseAnzeigen(Adresse a);
+  public void anzahlEintraegeAnzeigen(int i);
+  public void kommentarAnzeigen(String s);
+   // end of main
+  
+  public void suchenB_ActionPerformed(ActionEvent evt) {
+       c.adresseSuchen(nname.getText());
+  }
+//     end of suchenB_ActionPerformed
+
 // 
 //   public void eintragenB_ActionPerformed(ActionEvent evt) {
 //     TODO hier Quelltext einfügen
@@ -122,3 +129,4 @@ public class Adressbuch_GUI extends JFrame implements View {
 // 
 //    Ende Methoden
 // }  end of class Adressbuch_GUI
+}
