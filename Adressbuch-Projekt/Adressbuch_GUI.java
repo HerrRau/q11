@@ -114,19 +114,18 @@ public class Adressbuch_GUI extends JFrame implements View {
    // end of main
   
   public void suchenB_ActionPerformed(ActionEvent evt) {
-       c.adresseSuchen(nname.getText());
-  }
-//     end of suchenB_ActionPerformed
+       c.adresseSuchen(NnameT.getText());
+  }  //end of suchenB_ActionPerformed
 
-// 
-//   public void eintragenB_ActionPerformed(ActionEvent evt) {
-//     TODO hier Quelltext einfügen
-//   }  end of eintragenB_ActionPerformed
-// 
-//   public void aktualisierenB_ActionPerformed(ActionEvent evt) {
-//      TODO hier Quelltext einfügen
-//   }  end of aktualisierenB_ActionPerformed
-// 
+
+  public void eintragenB_ActionPerformed(ActionEvent evt) {
+       c.adresseEintragen(NnameT.getText(), VnameT.getText(), emailT.getText(), telefonT.getText());
+  }  //end of eintragenB_ActionPerformed
+
+  public void aktualisierenB_ActionPerformed(ActionEvent evt) {
+       
+  }  //end of aktualisierenB_ActionPerformed
+
 //    Ende Methoden
 // }  end of class Adressbuch_GUI
 }
