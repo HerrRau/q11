@@ -3,7 +3,7 @@ import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.event.*;
 
-public class Adressbuch_GUI extends JFrame {
+public class Adressbuch_GUI extends JFrame implements View {
   // Anfang Attribute
   private JTextField VnameT = new JTextField();
   private JLabel VnameL = new JLabel();
@@ -18,6 +18,7 @@ public class Adressbuch_GUI extends JFrame {
   private JButton aktualisierenB = new JButton();
   private JLabel rueckL = new JLabel();
   private JLabel anzahlL = new JLabel();
+  private Controller c;
   // Ende Attribute
   
   public Adressbuch_GUI(String title) { 
@@ -100,19 +101,24 @@ public class Adressbuch_GUI extends JFrame {
   
   public static void main(String[] args) {
     new Adressbuch_GUI("Adressbuch_GUI");
+  }
+  
+  public void controllerSetzen(Controller cNeu){
+      this.c = cNeu;
+  }
   } // end of main
   
-  public void suchenB_ActionPerformed(ActionEvent evt) {
-    // TODO hier Quelltext einfügen
-  } // end of suchenB_ActionPerformed
-
-  public void eintragenB_ActionPerformed(ActionEvent evt) {
-    // TODO hier Quelltext einfügen
-  } // end of eintragenB_ActionPerformed
-
-  public void aktualisierenB_ActionPerformed(ActionEvent evt) {
-    // TODO hier Quelltext einfügen
-  } // end of aktualisierenB_ActionPerformed
-
-  // Ende Methoden
-} // end of class Adressbuch_GUI
+//    public void suchenB_ActionPerformed(ActionEvent evt) {
+//      TODO hier Quelltext einfügen
+//   }  end of suchenB_ActionPerformed
+// 
+//   public void eintragenB_ActionPerformed(ActionEvent evt) {
+//     TODO hier Quelltext einfügen
+//   }  end of eintragenB_ActionPerformed
+// 
+//   public void aktualisierenB_ActionPerformed(ActionEvent evt) {
+//      TODO hier Quelltext einfügen
+//   }  end of aktualisierenB_ActionPerformed
+// 
+//    Ende Methoden
+// }  end of class Adressbuch_GUI
