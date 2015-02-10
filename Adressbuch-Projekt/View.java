@@ -4,6 +4,6 @@ public interface View
     void anzahlEintraegeAnzeigen(int i);
     void kommentarAnzeigen(String s);
 
-    void controllerSetzen(Controller c);  
+    void controllerSetzen(MyController c);  
 
 }
