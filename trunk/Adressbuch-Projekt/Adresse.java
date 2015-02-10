@@ -18,24 +18,59 @@ public class Adresse  {
     public void emailAendern(String eneu){
         email = eneu;
     }
+    String nachname;
+    String vorname;
+    String email;
+    String telefon;
     
-    public String emailGeben(){
+    public Adresse(String nachname, String vorname, String email, String telefon)
+    {
+        super();
+    }
+    
+    public void telefonAendern(String telefonNeu)
+    {
+        telefon=telefonNeu;
+    }
+    public void emailAendern(String emailNeu)
+    {
+        email=emailNeu;
+    }
+    String emailGeben()
+    {
         return email;
     }
-    
-    public String telefonGeben(){
+    String telefonGeben()
+    {
         return telefon;
     }
-    
-    public String vornameGeben(){
+    String vornameGeben()
+    {
         return vorname;
     }
-    
-    public String nachnameGeben(){
+    String nachnameGeben()
+    {
         return nachname;
     }
-    
-    public String schluesselAlsStringGeben(){
-        return nachname+", "+vorname;
-    }
 }
+//     public String emailGeben(){
+//         return email;
+//     }
+//     
+//     public String telefonGeben(){
+//         return telefon;
+//     }
+//     
+//     public String vornameGeben(){
+//         return vorname;
+//     }
+//     
+//     public String nachnameGeben(){
+//         return nachname;
+//     }
+//     
+//     public String schluesselAlsStringGeben(){
+//         return nachname+", "+vorname;
+//     }
+// }
+
