@@ -14,8 +14,6 @@ public class Main{
     void start(){
         this.controller = new MyController();
 
-        this.view = new Adressbuch_GUI();
-
         this.view = new Adressbuch_GUI("title");
 
         this.model = new UnterKlasseModel();

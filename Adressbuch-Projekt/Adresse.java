@@ -69,9 +69,9 @@ public class Adresse implements Datenelement{
 //         return nachname;
 //     }
 //     
-//     public String schluesselAlsStringGeben(){
-//         return nachname+", "+vorname;
-//     }
+     public String schluesselAlsStringGeben(){
+         return nachname+", "+vorname;
+   }
 // }
  public void informationAusgeben(){
      System.out.println (nachname+", "+vorname);

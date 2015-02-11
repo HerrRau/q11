@@ -8,7 +8,7 @@ public class ViewMinimal implements View
     {
     }
 
-    public void controllerSetzen(Controller c) {
+    public void controllerSetzen(MyController c) {
         this.controller = c;
     }
 
