@@ -1,4 +1,4 @@
-public class Binbaum {
+public class Binbaum{
     // Attribute
     public Baumelement wurzel;
     
@@ -33,4 +33,5 @@ public class Binbaum {
     public int hoeheGeben() {
         return wurzel.hoeheGeben();
     }
+  
 }

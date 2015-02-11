@@ -1,4 +1,4 @@
-public class Adresse  {
+public class Adresse implements Datenelement{
 //     String nachname;
 //     String vorname;
 //     String email;
@@ -52,7 +52,7 @@ public class Adresse  {
     {
         return nachname;
     }
-}
+
 //     public String emailGeben(){
 //         return email;
 //     }
@@ -73,4 +73,35 @@ public class Adresse  {
 //         return nachname+", "+vorname;
 //     }
 // }
+ public void informationAusgeben(){
+     System.out.println (nachname+", "+vorname);
+    } 
+    
+public boolean schluesselIstGleich(String s){
+    if ((nachname+", "+vorname).compareTo(s)==0) return true;
+        else return false;
+    }
+    
+public boolean schluesselIstGroesserAls(String s){
+     if ((nachname+", "+vorname).compareTo(s)>0) return true;
+        else return false;
+    }
+    
+public boolean istKleinerAls(Datenelement d){
+        if ((nachname+", "+vorname).compareTo((nachname+", "+vorname))<0) return true;
+        else return false;
+    }
+    
+public boolean istGroesserAls(Datenelement d){
+     if ((nachname+", "+vorname).compareTo((nachname+", "+vorname))>0) return true;
+        else return false;
+    }
+    
+public boolean istGleich(Datenelement d){
+    if ((nachname+", "+vorname).compareTo((nachname+", "+vorname))==0) return true;
+        else return false;
+    }
+    
+}
+    
 
