@@ -3,6 +3,7 @@ public class Main{
     View view;
     Controller controller;
     Model model;
+    
 
     //Konstruktor
     Main(){
@@ -12,7 +13,11 @@ public class Main{
     //Methoden
     void start(){
         this.controller = new MyController();
+
+        this.view = new Adressbuch_GUI();
+
         this.view = new Adressbuch_GUI("title");
+
         this.model = new UnterKlasseModel();
     }
 
