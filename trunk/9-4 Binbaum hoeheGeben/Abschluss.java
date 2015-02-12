@@ -6,7 +6,7 @@ public class Abschluss extends Baumelement {
     }
 
     // Methoden
-    public Baumelement  einfuegen(Datenelement d) {
+    public Baumelement einfuegen(Datenelement d) {
         Knoten k = new Knoten(d);
         return k;
     }
