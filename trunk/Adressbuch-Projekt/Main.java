@@ -7,7 +7,7 @@ public class Main{
 
     //Konstruktor
     Main(){
-
+        start();
     }
 
     //Methoden
