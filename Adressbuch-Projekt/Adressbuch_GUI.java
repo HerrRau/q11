@@ -126,7 +126,8 @@ public class Adressbuch_GUI extends JFrame implements View {
    // end of main
   
   public void suchenB_ActionPerformed(ActionEvent evt) {
-       c.adresseSuchen(NnameT.getText());
+       //falsch: gesucht werden soll nach "Nachname, Vorname" - nur so sinnvoll!
+       c.adresseSuchen(NnameT.getText()+", "+VnameT.getText());
   }  //end of suchenB_ActionPerformed
 
   public void eintragenB_ActionPerformed(ActionEvent evt) {
@@ -134,17 +135,8 @@ public class Adressbuch_GUI extends JFrame implements View {
   }  //end of eintragenB_ActionPerformed
 
   public void aktualisierenB_ActionPerformed(ActionEvent evt) { 
-      if(emailT.getText() != null)
-       {
-           c.emailAendern(NnameT.getText(), emailT.getText());
-       } else {
-           if(telefonT.getText() != null)
-           {
-               c.telefonAendern(NnameT.getText(), telefonT.getText());
-           } else {
-               this.kommentarAnzeigen("Bitte ausfüllen");
-            }
-        }
+       c.emailAendern(NnameT.getText()+", "+VnameT.getText(), emailT.getText());
+       c.telefonAendern(NnameT.getText()+", "+VnameT.getText(), telefonT.getText());       
     }  //end of aktualisierenB_ActionPerformed
 
 //    Ende Methoden
