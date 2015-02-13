@@ -19,7 +19,7 @@ public class gui extends JFrame implements View{
   private JTextField emailField = new JTextField();
   private JTextField telefonField = new JTextField();
   private JLabel jLabel1 = new JLabel();
-  private MyController c;
+  private Controller c;
   // Ende Attribute
   
   public gui(String title) { 
@@ -132,24 +132,24 @@ public class gui extends JFrame implements View{
   } // end of suchenButton_ActionPerformed
 
   public void eintragenButton_ActionPerformed(ActionEvent evt) {
-    c.adresseEintragen(nachnameField.getText(), vornameField.getText(), emailField.getText(), telefonField.getText());
+    c.adresseEintragen( new Adresse(nachnameField.getText(), vornameField.getText(), emailField.getText(), telefonField.getText()));
   } // end of eintragenButton_ActionPerformed
 
   public void aktualisierenButton_ActionPerformed(ActionEvent evt) {
     if(emailField.getText() != null)
        {
-           c.emailAendern(nachnameT.getText(), emailT.getText());
+           c.emailAendern(nachnameField.getText(), emailField.getText());
        } else {
            if(telefonField.getText() != null)
            {
-               c.telefonAendern(nachnameT.getText(), telefonField.getText());
+               c.telefonAendern(nachnameField.getText(), telefonField.getText());
            } else {
-               view.kommentarAnzeigen("Bitte ausfüllen");
+               this.kommentarAnzeigen("Bitte ausfüllen");
             }
         }
   } // end of aktualisierenButton_ActionPerformed
 
-  public void controllerSetzen(MyController cNeu) {
+  public void controllerSetzen(Controller cNeu) {
       this.c = cNeu;
     }
   // Ende Methoden

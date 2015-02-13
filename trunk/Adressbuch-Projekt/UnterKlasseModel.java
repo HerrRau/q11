@@ -13,6 +13,7 @@ public class UnterKlasseModel extends ModelUmsetzung
         // von Datenelement erbt, der Binbaum aber nur Datenelemente einfuegen
         // kann - also muss erst der Code in der Klasse Adresse geaendert werden
         binbaum.einfuegen(a);
+        anzahlEintraegeSenden(binbaum.anzahlGeben());
     }
 
     public Adresse adresseSuchen(String suchschluessel) {

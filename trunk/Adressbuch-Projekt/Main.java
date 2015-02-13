@@ -13,22 +13,15 @@ public class Main{
     //Methoden
     void start(){
         this.controller = new MyController();
-
-        this.view = new gui("title");
-
+        this.view = new Adressbuch_GUI("title");
         this.model = new UnterKlasseModel();
+        
+        controller.modelSetzen(model);
+        controller.viewSetzen(view);
+        model.viewSetzen(view);
+        view.controllerSetzen(controller);
+        
     }
 
-    public void controllerSetzen(Controller c) {
-        this.controller = c;
-    }
-
-    public void viewSetzen(View v){
-        this.view = v;
-    }
-
-    public void modelSetzen(Model m){
-        this.model = m;
-    }
 
 }
