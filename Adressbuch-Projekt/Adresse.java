@@ -1,41 +1,25 @@
 public class Adresse implements Datenelement{
-//     String nachname;
-//     String vorname;
-//     String email;
-//     String telefon;
-//     
-//     public Adresse(String n, String v, String e, String t){
-//         nachname=n;
-//         vorname=v;
-//         email=e;
-//         telefon=t;
-//     }
-//     
-//     public void telefonAendern(String tneu){
-//         telefon = tneu;
-//     }
-//     
-//     public void emailAendern(String eneu){
-//         email = eneu;
-//     }
     String nachname;
     String vorname;
     String email;
     String telefon;
     
-    public Adresse(String nachname, String vorname, String email, String telefon)
-    {
+    public Adresse(String n, String v, String e, String t){
         super();
+        nachname=n;
+        vorname=v;
+        email=e;
+        telefon=t;
     }
     
-    public void telefonAendern(String telefonNeu)
-    {
-        telefon=telefonNeu;
+    public void telefonAendern(String tneu){
+        telefon = tneu;
     }
-    public void emailAendern(String emailNeu)
-    {
-        email=emailNeu;
+    
+    public void emailAendern(String eneu){
+        email = eneu;
     }
+    
     String emailGeben()
     {
         return email;
@@ -53,27 +37,12 @@ public class Adresse implements Datenelement{
         return nachname;
     }
 
-//     public String emailGeben(){
-//         return email;
-//     }
-//     
-//     public String telefonGeben(){
-//         return telefon;
-//     }
-//     
-//     public String vornameGeben(){
-//         return vorname;
-//     }
-//     
-//     public String nachnameGeben(){
-//         return nachname;
-//     }
-//     
+
      public String schluesselAlsStringGeben(){
          return nachname+", "+vorname;
    }
-// }
- public void informationAusgeben(){
+
+   public void informationAusgeben(){
      System.out.println (nachname+", "+vorname);
     } 
     

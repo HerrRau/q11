@@ -18,7 +18,7 @@ public class Adressbuch_GUI extends JFrame implements View {
   private JButton aktualisierenB = new JButton();
   private JLabel rueckL = new JLabel();
   private JLabel anzahlL = new JLabel();
-  private MyController c;
+  private Controller c;
   // Ende Attribute
   
   public Adressbuch_GUI(String title) { 
@@ -104,13 +104,25 @@ public class Adressbuch_GUI extends JFrame implements View {
     new Adressbuch_GUI("Adressbuch_GUI");
   }
   
-  public void controllerSetzen(MyController cNeu){
+  public void controllerSetzen(Controller cNeu){
       this.c = cNeu;
   }
   
-  public void adresseAnzeigen(Adresse a){}
-  public void anzahlEintraegeAnzeigen(int i){}
-  public void kommentarAnzeigen(String s){}
+  public void adresseAnzeigen(Adresse a){
+      NnameT.setText(a.nachnameGeben());
+      VnameT.setText(a.vornameGeben());
+      emailT.setText(a.emailGeben());
+      telefonT.setText(a.telefonGeben());
+  }
+    
+    
+  public void anzahlEintraegeAnzeigen(int i){
+      anzahlL.setText("Es gibt "+i+" Eintraege.");
+      
+  }
+  public void kommentarAnzeigen(String s){
+      rueckL.setText(s);
+    }
    // end of main
   
   public void suchenB_ActionPerformed(ActionEvent evt) {
@@ -118,7 +130,7 @@ public class Adressbuch_GUI extends JFrame implements View {
   }  //end of suchenB_ActionPerformed
 
   public void eintragenB_ActionPerformed(ActionEvent evt) {
-       c.adresseEintragen(NnameT.getText(), VnameT.getText(), emailT.getText(), telefonT.getText());
+       c.adresseEintragen( new Adresse(NnameT.getText(), VnameT.getText(), emailT.getText(), telefonT.getText()));
   }  //end of eintragenB_ActionPerformed
 
   public void aktualisierenB_ActionPerformed(ActionEvent evt) { 
@@ -130,7 +142,7 @@ public class Adressbuch_GUI extends JFrame implements View {
            {
                c.telefonAendern(NnameT.getText(), telefonT.getText());
            } else {
-               view.kommentarAnzeigen("Bitte ausfüllen");
+               this.kommentarAnzeigen("Bitte ausfüllen");
             }
         }
     }  //end of aktualisierenB_ActionPerformed
