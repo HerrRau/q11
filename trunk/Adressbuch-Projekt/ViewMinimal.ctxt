@@ -2,7 +2,7 @@
 comment0.params=
 comment0.target=ViewMinimal()
 comment1.params=c
-comment1.target=void\ controllerSetzen(MyController)
+comment1.target=void\ controllerSetzen(Controller)
 comment2.params=i
 comment2.target=void\ anzahlEintraegeEmpfangen(int)
 comment3.params=s

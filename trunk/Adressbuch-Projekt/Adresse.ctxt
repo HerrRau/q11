@@ -1,7 +1,7 @@
 #BlueJ class context
-comment0.params=nachname\ vorname\ email\ telefon
+comment0.params=n\ v\ e\ t
 comment0.target=Adresse(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
-comment1.params=telefonNeu
+comment1.params=tneu
 comment1.target=void\ telefonAendern(java.lang.String)
 comment10.params=s
 comment10.target=boolean\ schluesselIstGroesserAls(java.lang.String)
@@ -11,7 +11,7 @@ comment12.params=d
 comment12.target=boolean\ istGroesserAls(Datenelement)
 comment13.params=d
 comment13.target=boolean\ istGleich(Datenelement)
-comment2.params=emailNeu
+comment2.params=eneu
 comment2.target=void\ emailAendern(java.lang.String)
 comment3.params=
 comment3.target=java.lang.String\ emailGeben()
