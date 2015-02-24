@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=i
+comment0.target=Graph_Matrix(int)
+comment0.text=\r\n\ Im\ Konstruktor\ gibt\ man\ die\ maximale\ Anzahl\ der\ Knoten\ an.\ Es\ ist\ nicht\ m\u00F6glich,\ bei\ \r\n\ einem\ angelegten\ Graphen\ nachtr\u00E4glich\ mehr\ Knoten\ einzuf\u00FCgen,\ als\ beim\ Anfang\ angegeben\r\n\ wurden.\r\n\ Im\ Konstruktor\ werden\ alle\ verwendeten\ Arrays\ auf\ die\ entsprechende\ L\u00E4nge\ initialisiert.\r\n\ \r\n\ @param\ \ i\ die\ maximale\ Anzahl\ der\ Knoten.\r\n\ \r\n
+comment1.params=s
+comment1.target=void\ knotenEinfuegen(java.lang.String)
+comment1.text=\r\n\ Innerhalb\ dieser\ Methode\ wird\ ein\ neuer\ Knoten\ erzeugt\ und\ dem\ Graphen\ hinzugef\u00FCgt.\r\n\ Vorher\ wird\ \u00FCberpr\u00FCft,\ ob\ 1.\ noch\ Platz\ f\u00FCr\ den\ Knoten\ ist\ oder\ bereits\ die\ Maximalzahl\r\n\ erreicht\ ist,\ und\ 2.\ ob\ es\ bereits\ einen\ Knoten\ mit\ dem\ gleichen\ Namen\ gibt.\r\n\ Dann\ wird\ der\ Knoten\ in\ das\ Knoten-Arrays\ an\ der\ passenden\ Stelle\ eingebaut\ und\ in\ der\ Matrix\r\n\ wird\ an\ der\ passenden\ Stelle\ 0\ geschrieben.\r\n\ Danach\ werden\ alle\ potentiell\ m\u00F6glichen\ Kanten,\ die\ zu\ dem\ Knoten\ geh\u00F6ren\ k\u00F6nnten,\ auf\ -1\ \r\n\ gesetzt.\r\n\ Zum\ Schluss\ wird\ der\ Z\u00E4hler\ f\u00FCr\ die\ aktuelle\ Anzahl\ der\ Knoten\ um\ 1\ erh\u00F6ht.\r\n\ \r\n\ @param\ s\ Bezeichner\ des\ einzuf\u00FCgenden\ Knoten.\ \r\n
+comment2.params=von\ nach\ gewichtung
+comment2.target=void\ kanteEinfuegen(java.lang.String,\ java.lang.String,\ int)
+comment2.text=\r\n\ Innerhalb\ dieser\ Methode\ wird\ eine\ neue\ Kante\ zwischen\ zwei\ Knoten\ erzeugt\ und\ dem\ \r\n\ Graphen\ hinzugef\u00FCgt.\r\n\ Dazu\ wird\ erst\ ermittelt,\ ob\ es\ die\ betreffenden\ Knoten\ \u00FCberhaupt\ gibt.\ (Dabei\ werden\ \r\n\ aus\ den\ Bezeichnern/Schl\u00FCsseln\ der\ Knoten\ deren\ interne\ Nummern\ ermittelt,\ n\u00E4mlich\ die\ \r\n\ Index-Nummer\ des\ Knoten-Arrays.\ Wenn\ diese\ Nummern\ -1\ sind,\ bedeutet\ es,\ dass\ es\ Knoten\r\n\ mit\ diesen\ Bezeichnern\ gar\ nicht\ gibt.)\r\n\ Nur\ wenn\ es\ beide\ Knoten\ gibt,\ und\ wenn\ sie\ voneinander\ verschieden\ sind,\ dann\ wird\ die\r\n\ Kante\ mit\ der\ entsprechenden\ Gewichtung\ angelegt.\r\n\ \r\n\ @param\ von\ der\ Bezeichner\ des\ Startknoten\ der\ Kante\r\n\ @param\ nach\ der\ Bezeichner\ des\ Zielknoten\ der\ Kante\r\n\ @param\ gewichtung\ die\ Gewichtung\ der\ Kante\r\n
+comment3.params=s
+comment3.target=int\ knotenNummer(java.lang.String)
+comment3.text=\r\n\ Diese\ Methode\ ermittelt\ aus\ dem\ gegebenen\ Bezeichner/Schl\u00FCssel\ eines\ Knotens\ die\ entsprechende\ Nummer\r\n\ in\ dem\ Knoten-Array,\ das\ zur\ Verwaltung\ der\ Knoten\ verwendet\ wird.\ Das\ ist\ eine\ reine\ Hilfsmethode.\r\n\ \r\n\ @param\ s\ der\ Bezeichner\ des\ Knoten\r\n\ @return\ die\ Nummer\ des\ Knoten\ im\ Array.\ Ist\ -1,\ wenn\ es\ einen\ Knoten\ mit\ diesem\ Bezeichner\ nicht\ gibt.\r\n
+comment4.params=
+comment4.target=void\ ausgeben()
+comment4.text=\r\n\ Diese\ Methode\ gibt\ die\ Adjazenzmatrix\ des\ Graphen\ auf\ der\ Konsole\ aus.\r\n
+comment5.params=
+comment5.target=int\ knotenAnzahlGeben()
+comment5.text=\r\n\ Diese\ Methode\ ermittelt\ die\ Anzahl\ der\ Knoten\ im\ Graphen.\ Sie\ kann\ nie\ h\u00F6her\ werden\ als\ die\ beim\ \r\n\ Anlegen\ des\ Graphen\ festgelegte\ H\u00F6chstgrenze.\r\n\ @return\ aktuelle\ Anzahl\ der\ Knoten\ im\ Graphen.\r\n
+comment6.params=von\ nach
+comment6.target=int\ kanteGewichtGeben(java.lang.String,\ java.lang.String)
+comment6.text=\r\n\ Diese\ Methode\ ermittelt\ die\ Gewichtung\ der\ Kante\ zwischen\ zwei\ Knoten.\ Sie\ ist\ hier\ noch\ nicht\r\n\ ausgef\u00FChrt,\ weil\ wir\ sie\ noch\ nicht\ brauchen.\r\n\ @param\ von\ Bezeichner\ des\ Startknoten\r\n\ @param\ nach\ Bezeichner\ des\ Zielknoten\r\n\ @return\ Gewichtung\ der\ Kante.\ Ist\ -1,\ wenn\ es\ zwischen\ den\ Knoten\ keine\ Kante\ gibt.\r\n
+numComments=7
