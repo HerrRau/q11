@@ -14,6 +14,7 @@ public class Graphtester  {
         g.knotenEinfuegen("FFB");
         g.knotenEinfuegen("Muenchen");
         g.ausgeben();
+
         g.kanteEinfuegen("Augsburg", "Moskau", 42);
         g.kanteEinfuegen("Moskau", "Augsburg", 999);
         g.kanteEinfuegen("Moskau", "Muenchen", 36);

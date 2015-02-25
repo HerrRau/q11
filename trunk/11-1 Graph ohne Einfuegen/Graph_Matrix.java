@@ -7,7 +7,7 @@
  * handelt und ein Eintrag >0 gibt die Gewichtung einer vorhandenen Kante an.
  * 
  * @author Herr Rau
- * @version März 2012
+ * @version Maerz 2012
  */
 
 public class Graph_Matrix {
@@ -96,7 +96,9 @@ public class Graph_Matrix {
     void ausgeben() {
         int breite = 4;
         //Kopfzeile Leerraum
-        for (int i=0;i<breite+1;i++) { System.out.print(" "); }
+        for (int i=0;i<breite+1;i++) { 
+            System.out.print(" ");
+        }
         //Kopfzeile Rest
         for (int i=0; i<anzahlKnoten;i++) {
             System.out.print(knoten[i].bezFormatGeben(breite));
@@ -119,7 +121,7 @@ public class Graph_Matrix {
     }
 
     /**
-     * Diese Methode ermittelt die Anzahl der Knoten im Graphen. Sie kann nie höher werden als die beim 
+     * Diese Methode ermittelt die Anzahl der Knoten im Graphen. Sie kann nie hoeher werden als die beim 
      * Anlegen des Graphen festgelegte Höchstgrenze.
      * @return aktuelle Anzahl der Knoten im Graphen.
      */
