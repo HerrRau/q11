@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=s
+comment0.target=Knoten(java.lang.String)
+comment0.text=\r\n\ Im\ Konstruktor\ wird\ dem\ Bezeichnungsattribut\ des\ Knoten\ ein\ Wert\ zugewiesen.\r\n\ @param\ s\ der\ Bezeichner\ des\ zu\ erstellenden\ Knoten\r\n
+comment1.params=
+comment1.target=java.lang.String\ bezeichnungGeben()
+comment1.text=\r\n\ Gibt\ den\ Bezeichner\ des\ Knotenobjekts\ zur\u00FCck,\ dessen\ bisher\ einziges\ Attribut.\ \r\n\ @return\ \ der\ Bezeichner\ oder\ Schl\u00FCssel\ des\ Knoten\r\n
+comment2.params=i
+comment2.target=java.lang.String\ bezFormatGeben(int)
+comment2.text=\r\n\ \ Eine\ laestige\ Methode,\ die\ nur\ zur\ Darstellung\ auf\ der\ Konsole\ gebraucht\ wird.\r\n\ \ Sie\ gibt\ den\ Bezeichner\ des\ Knotenobjekts\ zurueck,\ aber\ auf\ die\ angegebene\ L\u00E4nge\r\n\ \ gekuerzt\ (bzw.\ mit\ Leerzeichen\ aufgef\u00FCllt),\ damit\ bei\ der\ Ausgabe\ die\ Spalten\r\n\ \ und\ Zeilen\ gleich\ breit\ sind,\ egal\ wie\ lange\ die\ Namen\ der\ Knoten\ sind.\r\n\ \r\n\ @param\ i\ Anzahl\ der\ Zeichen,\ auf\ die\ der\ Bezeichner\ formatiert\ wird.\r\n\ @return\ \ formatierter\ Bezeichner\r\n
+numComments=3
