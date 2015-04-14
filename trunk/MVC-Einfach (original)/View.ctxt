@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=neuerController
+comment0.target=void\ controllerSetzen(Controller)
+comment1.params=c
+comment1.target=void\ nachrichtEmpfangen(char)
+comment2.params=nachrichtentext
+comment2.target=void\ kommentarAnzeigen(java.lang.String)
+comment3.params=s
+comment3.target=void\ nachrichtAnController(java.lang.String)
+numComments=4
