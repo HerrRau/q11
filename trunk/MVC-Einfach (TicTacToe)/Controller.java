@@ -1,4 +1,4 @@
-public class Controller  {
+public abstract class Controller  {
     
     protected Model model;
     protected View view;
@@ -14,17 +14,20 @@ public class Controller  {
         this.model = neuesModel;
     }
     
+    
+    
+    
     public void nachrichtVonViewEmpfangen(String s) {
     
     }
     
-    public void kommentarAnViewSenden(String s){
-        if (view !=null) {
-            view.kommentarAnzeigen(s);
-        }
-        else {
-            System.out.println("Fehler: Noch kein View verbunden.");
-        }
-    }
+//     public void kommentarAnViewSenden(String s){
+//         if (view !=null) {
+//             view.kommentarAnzeigen(s);
+//         }
+//         else {
+//             System.out.println("Fehler: Noch kein View verbunden.");
+//         }
+//     }
 
 }

@@ -7,9 +7,9 @@ public class Main
     public Main() {
         
        
-        model = new Model();
-        view = new Textview();
-        controller = new Controller();
+//         model = new XXX();
+//         view = new YYY();
+//         controller = new ZZZ();
         
         model.viewSetzen(view);
         controller.viewSetzen(view);
