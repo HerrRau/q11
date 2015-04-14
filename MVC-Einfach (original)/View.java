@@ -6,6 +6,5 @@ public interface View {
     
     public void kommentarAnzeigen(String nachrichtentext);
     
-    public void nachrichtAnController(String s);
         
 }
