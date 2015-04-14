@@ -9,14 +9,14 @@ public class Model {
         this.view = neuerView;
     }
     
-    public void nachrichtAnView(char c) {
-        if (view !=null) {
-            view.nachrichtEmpfangen(c);
-        }
-        else {
-            System.out.println("Fehler: Noch kein View verbunden.");
-        }
-    }
+//     public void nachrichtAnView(char c) {
+//         if (view !=null) {
+//             view.nachrichtEmpfangen(c);
+//         }
+//         else {
+//             System.out.println("Fehler: Noch kein View verbunden.");
+//         }
+//     }
     
 
 }
