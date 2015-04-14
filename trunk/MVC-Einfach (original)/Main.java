@@ -8,7 +8,7 @@ public class Main
         
        
         model = new Model();
-//         view = new XXXX();
+        view = new Textview();
         controller = new Controller();
         
         model.viewSetzen(view);
