@@ -1,4 +1,4 @@
-public class Model {
+public abstract class Model {
     
     View view;
     
