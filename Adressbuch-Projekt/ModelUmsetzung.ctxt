@@ -1,8 +1,0 @@
-#BlueJ class context
-comment0.params=
-comment0.target=ModelUmsetzung()
-comment1.params=v
-comment1.target=void\ viewSetzen(View)
-comment2.params=i
-comment2.target=void\ anzahlEintraegeSenden(int)
-numComments=3
